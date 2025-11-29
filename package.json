@@ -1,0 +1,44 @@
+{
+  "name": "huigei",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "惠给网 - 优惠直接给到你",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "node api/index.js"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "pinia": "^2.1.6",
+    "element-plus": "^2.3.8",
+    "axios": "^1.5.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.1",
+    "joi": "^17.9.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1",
+    "ali-oss": "^6.18.1",
+    "cos-nodejs-sdk-v5": "^2.11.17",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.0",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5",
+    "@vitejs/plugin-vue": "^4.3.4"
+  },
+  "keywords": ["优惠", "线报", "省钱", "Vue", "全栈"],
+  "author": "惠给网团队",
+  "license": "MIT"
+}
