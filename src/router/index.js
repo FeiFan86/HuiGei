@@ -28,7 +28,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/HuiGei/' : '/'),
+  history: createWebHistory(),
   routes
 })
 
