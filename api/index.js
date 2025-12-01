@@ -12,9 +12,17 @@ const app = express();
 // 中间件
 app.use(helmet());
 app.use(compression());
-app.use(morgan('combined'));
+
+// 简化日志（生产环境减少日志输出）
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('combined'));
+} else {
+  app.use(morgan('tiny'));
+}
+
+// CORS配置 - 简化处理，允许所有来源（生产环境建议配置具体域名）
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: true,
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
